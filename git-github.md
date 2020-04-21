@@ -3,4 +3,4 @@
 **bu son projedşr**
 *deneme*
 `get statur`
-[carpımtablosu] (bihaberiz.com)
+[carpımtablosu] (http://wwwçbihaberiz.com)
