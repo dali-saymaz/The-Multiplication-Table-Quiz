@@ -22,5 +22,5 @@ saveHighScore = e => {
   highScores.sort((a, b) => b.score - a.score);//burada alınan puanları sort ile siralıyoruz
   highScores.splice(10);//splice ile burada 10 scordan fazlasını kesşyoruz
   localStorage.setItem("highScores", JSON.stringify(highScores));
-  window.location.assign("/");
+  window.location.assign("./index.html");
 };

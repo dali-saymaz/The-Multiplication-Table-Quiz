@@ -69,6 +69,10 @@ document.querySelector("#startstop").addEventListener("click", () => {
   }
   switchA = !switchA;
 })
+//end müzikle alakalı kısım
+
+
+
 timerPrint = () => {
   setInterval(() => {
     timeCounter++;
@@ -90,8 +94,7 @@ const maxtime = 10;//soru sorulma adeti
 startGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuesions = [...questions]; //function myFunction(x, y, z) { }var args = [0, 1, 2]; myFunction.apply(null, args);
-  //burada Spread Operatör, kullandır yukarıdaki gibi uzun yazmamıza gerek kalmadı
+  availableQuesions = [...questions];  //burada Spread Operatör, kullandır yukarıdaki gibi uzun yazmamıza gerek kalmadı
   console.log(availableQuesions);
   getNewQuestion();//cekilen her yeni soru al
 };
@@ -100,7 +103,7 @@ getNewQuestion = () => {
     // buradaki if li kısım sorular bittiğinde ve soru sayısı bittiğinde bizi end.html sayfasına yönlendirecek
     localStorage.setItem("mostRecentScore", score);//score degeri belirtir, mostrecentscore ise degerin hangi isimle kaydedeceğidir isimle scor değeri kaydedilir
     // go to the end page
-    return window.location.assign('/end.html');
+    return window.location.assign('./end.html');
   }
 
   questionCounter++;//soru sayacını bir arttırma
